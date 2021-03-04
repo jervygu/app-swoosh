@@ -166,6 +166,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="Wzs-nw-h8b" eventType="touchUpInside" id="MUa-nK-866"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJt-fk-bgx">
                                 <rect key="frame" x="16" y="20" width="29" height="24"/>
@@ -200,6 +203,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JSP-ia-htW"/>
+                    <connections>
+                        <segue destination="hkF-az-ry2" kind="show" identifier="skillVCSegue" id="TyS-H3-anU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HoA-44-K0F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="mgJ-VE-Nsf" userLabel="Exit" sceneMemberID="exit"/>
@@ -211,14 +217,14 @@
             <objects>
                 <viewController id="hkF-az-ry2" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mKR-EJ-Opb">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="p4c-6b-cDb">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="4n6-gm-JNy">
-                                <rect key="frame" x="0.0" y="64" width="390" height="108.66666666666669"/>
+                                <rect key="frame" x="0.0" y="20.000000000000007" width="390" height="108.66666666666669"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="aux-O4-aFb">
                                         <rect key="frame" x="124.66666666666669" y="0.0" width="141" height="22"/>
@@ -236,7 +242,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODO-iB-iY1" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
-                                <rect key="frame" x="16" y="727" width="358" height="66"/>
+                                <rect key="frame" x="16" y="673" width="358" height="66"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="uKH-s9-AZO"/>
@@ -247,7 +253,7 @@
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="Iyd-hr-7rs">
-                                <rect key="frame" x="16" y="227.66666666666663" width="358" height="66"/>
+                                <rect key="frame" x="16" y="183.66666666666666" width="358" height="66"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcq-jq-gja" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="162" height="66"/>
@@ -292,6 +298,7 @@
                             <constraint firstItem="p4c-6b-cDb" firstAttribute="leading" secondItem="mKR-EJ-Opb" secondAttribute="leading" id="upV-Ou-FHZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Z0X-55-Ui7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y57-DQ-1q7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
